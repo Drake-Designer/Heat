@@ -47,12 +47,19 @@ h3 {
 
 /* Navbar */
 
+#navbar-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
 #navbar {
   background-color: var(--color-brown-deep) !important;
 }
 
 #navbar .navbar-brand {
   font-family: var(--font-logo);
+  color: var(c);
   font-size: 1.5rem;
   margin-right: 3.8rem;
 }
@@ -61,4 +68,9 @@ h3 {
   color: var(--text-main, #ffffff) !important;
   font-family: var(--font-headings);
   font-size: 1.4rem;
+}
+
+#navbar .nav-link:hover {
+  color: var(--color-accent);
+  transition: width 0.8s ease;
 }
