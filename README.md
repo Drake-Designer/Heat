@@ -41,8 +41,11 @@
 
 ## Project Overview
 
-> A brief summary of the website and its purpose.  
-> Who the target audience is, why the site exists, and what it represents for the band.
+Heat is a dance-funk band based in Dublin, inspired by the sounds of Daft Punk, Chromeo, and especially Franc Moody. Our music is original, full of groove and positive vibes.. definitely made to get people dancing!
+
+The band started in 2019 through the friendship of Shaneo (vocals), Ati (bass), and Jorge (keys). JT (guitar) joined in 2020, and Dario (drums) completed the lineup in 2023. We’ve been rehearsing for years at Yellow Door Music Studio, recording our tracks both in the studio and at home, and playing live in venues like Bello Bar and The Sugar Club.
+
+> <strong>This website was created to introduce my band Heat to a wider audience, share our music, promote our upcoming gigs, and make it easy for people to book us for live shows.</strong>
 
 ---
 
@@ -50,27 +53,27 @@
 
 ### User Stories
 
-> - As a visitor, I want to listen to the band’s music, so I can discover their style.
-> - As a fan, I want to find upcoming events easily, so I can attend their gigs.
-> - As a venue owner, I want contact information, so I can book the band.
+- As a new visitor, I want to learn what kind of music the band plays, so I can decide if I like their style.
+
+- As a fan, I want to see upcoming gigs, so I can plan to attend their live shows.
+
+- As someone interested in booking the band, I want to find contact details or a booking button easily.
+
+- As a curious user, I want to explore photos and videos of past performances, so I can see what the live vibe is like.
+
+- As a music lover, I want to listen to samples or clips of the band’s original songs.
+
+- As a mobile user, I want the site to be easy to use on my phone or tablet.
 
 ### Structure
-
-> Description of the site’s layout and key sections (e.g. navbar, hero, gallery, contact...).
 
 ## Design
 
 #### Wireframes
 
-> Insert links or images of the wireframes.
-
 #### Colour Palette
 
-> List the colours used (with visual swatches if possible) and explain why they were chosen.
-
 #### Typography
-
-> Mention the fonts used (e.g. Google Fonts) and why they were selected.
 
 ---
 
@@ -89,12 +92,12 @@
 - HTML5
 - CSS3
 - Bootstrap 5
-- Git & GitHub
+- GitHub
 - Visual Studio Code
 
 ### Favicon Creation & Integration
 
-To create a full set of favicons compatible with all major platforms (desktop, Android, iOS), I used the online tool [RealFaviconGenerator](https://realfavicongenerator.net).
+To create a full set of favicons compatible with all major platforms (desktop, Android, iOS), I have used the online tool [RealFaviconGenerator](https://realfavicongenerator.net).
 
 **Steps:**
 
@@ -118,15 +121,8 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 ## Testing & Bug Fixes
 
-> Describe manual testing on different devices and browsers.  
-> Mention tools used to validate HTML and CSS (e.g. [W3C Validator](https://validator.w3.org/), [Jigsaw](https://jigsaw.w3.org/css-validator/)).  
-> Include any known bugs, how they were fixed, or why they remain unresolved.
-
 ---
 
 ## Deployment
-
-> This site is deployed using GitHub Pages.  
-> Include a live link and cloning instructions:
 
 ## Credits

@@ -10,11 +10,11 @@
   --font-logo: 'Audiowide', cursive; /* For logo, brand name, or special titles */
 
   /* Colour Palette */
-  --color-accent: #00a7e8; /* For buttons and links */
-  --color-bordeaux-dark: #26050a; /* For borders or small details */
-  --color-brown-deep: #4d2829; /* Navbar or button background */
-  --color-blue-dark: #313669; /* Section background */
-  --color-black-violet: #0d0c18; /* Main background */
+  --color-button-accent: #00a7e8; /* For buttons and links */
+  --color-border: #26050a; /* For borders or small details */
+  --color-navbar-background: #4d2829; /* Navbar or button background */
+  --color-bakcground: #313669; /* Section background */
+  --color-main: #0d0c18; /* Main background */
 }
 
 /* Global styles */
@@ -25,7 +25,7 @@ body {
   margin: 0.5rem;
 
   /* Colours */
-  background-color: var(--color-black-violet);
+  background-color: var(--color-main);
   color: var(--text-main, white);
 
   /* Fonts */
@@ -53,7 +53,7 @@ h3 {
 }
 
 #navbar {
-  background-color: var(--color-brown-deep) !important;
+  background-color: var(--color-navbar-background) !important;
   border-radius: 1.5rem;
 }
 
@@ -69,30 +69,30 @@ h3 {
 }
 
 #navbar .nav-link:hover {
-  color: var(--color-accent);
+  color: var(--color-button-accent);
   transition: 0.4s ease-in;
 }
 
 /* Buttons */
 
 .btn-primary {
-  background-color: var(--color-accent);
+  background-color: var(--color-button-accent);
   border: none;
-  color: var(--color-brown-deep);
+  color: var(--color-border);
   font-weight: bold;
   border-radius: 20px;
   transition: 0.3s ease-in;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-button-accent);
   color: white;
 }
 
 /* Header */
 
 .sub-heading {
-  color: var(--color-accent);
+  color: var(--color-button-accent);
 }
 
 .carousel-item img {
@@ -140,7 +140,7 @@ h3 {
 
 .hero-image:hover {
   transform: scale(1.02) rotate(-5deg);
-  filter: brightness(1.2) contrast(1) drop-shadow(0 0 25px var(--color-accent));
+  filter: brightness(1.2) contrast(1) drop-shadow(0 0 25px var(--color-button-accent));
 }
 
 @keyframes slideInLeft {
