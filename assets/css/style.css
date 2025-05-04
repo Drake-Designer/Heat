@@ -13,7 +13,7 @@
   --color-accent: #00a7e8; /* Accent color for buttons and links */
   --color-bordeaux-dark: #26050a; /* For borders or small details */
   --color-brown-deep: #4d2829; /* Navbar or button background */
-  --color-blue-dark: #313669; /* Section background (e.g. hero) */
+  --color-blue-dark: #313669; /* Section background */
   --color-black-violet: #0d0c18; /* Main background */
 }
 
@@ -43,4 +43,22 @@ h3 {
   margin: 0 0 1rem 0;
   line-height: 1.2;
   letter-spacing: 0.5px;
+}
+
+/* Navbar */
+
+#navbar {
+  background-color: var(--color-brown-deep) !important;
+}
+
+#navbar .navbar-brand {
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
+  margin-right: 3.8rem;
+}
+
+#navbar .container {
+  color: var(--text-main, #ffffff) !important;
+  font-family: var(--font-headings);
+  font-size: 1.4rem;
 }
