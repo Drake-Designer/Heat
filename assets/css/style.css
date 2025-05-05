@@ -117,7 +117,7 @@ p {
 /* Section: The Band */
 
 #the-band-section {
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
 
 #band-cards .card-pic {
@@ -189,5 +189,11 @@ p {
   }
   to {
     opacity: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 140px; /* per navbar più alta su mobile */
   }
 }
