@@ -14,7 +14,7 @@
       content="Heat band, Dublin band, funk band, dance music, Yellow Door Music Studio, live music, Daft Punk style, Chromeo, Franc Moody, gigs, concerts"
     />
 
-    <title>Heat | Band Website</title>
+    <title>HEAT | Home</title>
 
     <!-- Bootstrap CSS Link -->
     <link
@@ -91,23 +91,21 @@
       </div>
     </nav>
 
-    <!-- Header -->
-
     <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center">
+    <section id="hero-section">
       <div class="container-fluid">
         <div class="row align-items-center">
           <!-- Text Content -->
-          <div class="hero-text col-md-6 text-light ps-5 text-center">
+          <div id="hero-text" class="col-md-6 text-center">
             <h1 class="display-1 fw-bold">HEAT</h1>
             <h2 class="display-6 sub-heading">Ireland based band</h2>
             <p class="lead mt-3">Dublin</p>
-            <a href="upcoming-gigs.html" class="btn btn-primary btn-lg btn-accent mt-4">Get Tickets</a>
+            <a href="upcoming-gigs.html" class="btn btn-primary btn-lg">Get Tickets</a>
           </div>
 
-          <!-- Image -->
+          <!-- Hero Image -->
           <div class="col-md-6 text-center">
-            <img src="assets\images\shaneo-cartoon.webp" alt="Band Front Man" class="hero-image fade-in" />
+            <img id="hero-image" src="assets/images/shaneo-cartoon.webp" alt="Band Front Man" />
           </div>
         </div>
       </div>
@@ -117,7 +115,7 @@
     <header id="header" class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="lead display-6 sub-heading-color">Dance & Funk vibes from Dublin</h2>
+          <h2 class="display-4 sub-heading-color">Dance & Funk vibes from Dublin</h2>
           <p class="my-4">
             Heat is a Dublin-based funk/dance band blending vintage grooves with modern energy. Influenced by the likes of Daft
             Punk, Chromeo, and Franc Moody, our sound is crafted to keep you moving from the first beat to the last chorus.
@@ -130,7 +128,7 @@
         </div>
       </div>
 
-      <!-- Carousel  -->
+      <!-- Carousel -->
       <div class="col-12">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -146,19 +144,19 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <!-- Pic 1  -->
+            <!-- Pic 1 -->
             <div class="carousel-item active">
-              <img src="assets\images\meet-the-band.webp" class="d-block w-100" alt="..." />
+              <img src="assets/images/meet-the-band.webp" class="d-block w-100" alt="..." />
             </div>
 
-            <!-- Pic 2  -->
+            <!-- Pic 2 -->
             <div class="carousel-item">
-              <img src="assets\images\sugarclub-gig-4.webp" class="d-block w-100" alt="..." />
+              <img src="assets/images/sugarclub-gig-4.webp" class="d-block w-100" alt="..." />
             </div>
 
-            <!-- Pic 3  -->
+            <!-- Pic 3 -->
             <div class="carousel-item">
-              <img src="assets\images\new-background.webp" class="d-block w-100" alt="..." />
+              <img src="assets/images/new-background.webp" class="d-block w-100" alt="..." />
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -174,7 +172,6 @@
     </header>
 
     <!-- Bootstrap JS Link -->
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
@@ -187,13 +184,13 @@
         link.addEventListener('click', function (e) {
           let section = document.querySelector(e.target.getAttribute('href'));
           if (section) {
-            e.preventDefault(); // Prevent default anchor click behavior
+            e.preventDefault();
             let navbarHeight = document.querySelector('.navbar-toggler').offsetHeight;
             window.scroll({
-              top: section.offsetTop - navbarHeight, // Adjust for navbar height
+              top: section.offsetTop - navbarHeight,
               behavior: 'smooth',
             });
-            document.querySelector('.navbar-collapse').classList.remove('show'); // Collapse navbar
+            document.querySelector('.navbar-collapse').classList.remove('show');
           }
         });
       });
