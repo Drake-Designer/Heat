@@ -22,7 +22,7 @@ body {
   margin: 0.5rem;
   padding: 0;
   background-color: var(--color-main);
-  color: var(--text-main, white);
+  color: #ffffff;
   font-family: var(--font-primary);
   font-size: 16px;
 }
@@ -80,7 +80,7 @@ p {
 .btn-primary {
   background-color: var(--color-button-accent);
   border: none;
-  color: #0d0c18; /* migliorato il contrasto */
+  color: #ffffff;
   font-weight: bold;
   border-radius: 20px;
   transition: 0.3s ease-in;
@@ -88,7 +88,8 @@ p {
 
 .btn-primary:hover {
   background-color: var(--color-button-accent);
-  color: white;
+  color: var(--color-main);
+  text-shadow: 0 0 3px black;
 }
 
 #hero-text .btn {
@@ -96,17 +97,25 @@ p {
 }
 
 /* Header */
-.sub-heading {
+
+#hero-header {
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+
+#hero-header .sub-heading {
   color: var(--color-button-accent);
+}
+
+/* Section: Band Intro + Carousel */
+
+#text-section {
+  margin-bottom: 1.5rem;
 }
 
 .carousel-item img {
   height: 600px;
   object-fit: contain;
-}
-
-#hero-section {
-  margin: 1rem;
 }
 
 /* Animation for hero-text and hero-pic */
@@ -153,7 +162,7 @@ p {
   filter: brightness(1.2) contrast(1) drop-shadow(0 0 15px var(--color-button-accent));
 }
 
-/* Keyframes */
+/* Keyframes for animation */
 @keyframes slideInLeft {
   0% {
     opacity: 0.2;
