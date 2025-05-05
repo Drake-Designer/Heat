@@ -18,6 +18,7 @@
 }
 
 /* Global styles */
+
 body {
   margin: 0.5rem;
   padding: 0;
@@ -98,11 +99,6 @@ p {
 
 /* Header */
 
-#hero-header {
-  margin-top: 0;
-  margin-bottom: 5rem;
-}
-
 #hero-header .sub-heading {
   color: var(--color-button-accent);
 }
@@ -110,12 +106,24 @@ p {
 /* Section: Band Intro + Carousel */
 
 #text-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .carousel-item img {
   height: 600px;
   object-fit: contain;
+}
+
+/* Section: The Band */
+
+#the-band-section {
+  margin: 4rem;
+}
+
+#band-cards .card-pic {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Animation for hero-text and hero-pic */
