@@ -21,13 +21,8 @@
 
 /* -----------------------------------> Global styles */
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0.5rem;
-  padding-top: 72.89px;
   background-color: var(--color-main);
   color: #ffffff;
   font-family: var(--font-primary);
@@ -35,7 +30,7 @@ body {
 }
 
 header {
-  margin: 4rem;
+  margin: 0;
 }
 
 h1,
@@ -52,7 +47,7 @@ p {
 }
 
 section {
-  padding-top: 1.86rem;
+  padding-top: 72.89px;
 }
 
 /* -----------------------------------> Navbar */
@@ -202,10 +197,6 @@ section {
 
 /* -----------------------------------> Section: The Band */
 
-#the-band-section {
-  margin-bottom: 4rem;
-}
-
 #band-cards .card-pic {
   height: 300px;
   object-fit: cover;
@@ -260,6 +251,17 @@ section {
   transform: scale(1.02);
 }
 
-#music-section.fa-music {
+#music-section .fa-music {
   color: var(--color-button-accent);
+}
+
+/* -----------------------------------> Section: Gallery */
+
+.gallery-section img {
+  border: 2px solid var(--color-border);
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
 }
