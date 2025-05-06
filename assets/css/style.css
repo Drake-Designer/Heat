@@ -19,9 +19,13 @@
 
 /* Global styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0.5rem;
-  padding: 0;
+  padding-top: 72.89px;
   background-color: var(--color-main);
   color: #ffffff;
   font-family: var(--font-primary);
@@ -45,8 +49,13 @@ p {
   font-size: 1rem;
 }
 
+section {
+  padding-top: 0.5rem;
+}
+
 /* Navbar */
 #navbar {
+  margin: 0.5rem 0.5rem 0 0.5rem;
   background-color: var(--color-navbar-background) !important;
   border-radius: 1.5rem;
 }
