@@ -21,16 +21,17 @@
 
 /* -----------------------------------> Global styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  padding-top: 72.89px;
   margin: 0.5rem;
   background-color: var(--color-main);
   color: #ffffff;
   font-family: var(--font-primary);
   font-size: 16px;
-}
-
-header {
-  margin: 0;
 }
 
 h1,
