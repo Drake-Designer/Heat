@@ -89,7 +89,7 @@ section {
   transition: 0.4s ease-in;
 }
 
-/* Buttons */
+/* -----------------------------------> Buttons */
 .btn-primary {
   background-color: var(--color-button-accent);
   border: none;
@@ -107,6 +107,47 @@ section {
 
 #hero-text .btn {
   margin: 0;
+}
+
+/* -----------------------------------> Modal Button */
+
+#book-now-box {
+  max-width: 600px;
+  max-height: 300px;
+}
+
+#book-now .modal-title {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+#book-now h2 {
+  font-family: var(--font-headings);
+}
+
+#book-now li {
+  font-family: var(--font-secondary);
+  padding: 3px;
+  font-size: 15px;
+}
+
+#book-now label {
+  font-family: var(--font-secondary);
+}
+
+#book-now input,
+#book-now select {
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#book-now .btn-primary {
+  padding: 6px 20px;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 /* -----------------------------------> Header */
