@@ -242,6 +242,7 @@ section {
 #band-cards .card-pic {
   height: 300px;
   object-fit: cover;
+  object-position: center;
   border-radius: 1rem;
 }
 
@@ -299,13 +300,13 @@ section {
 }
 
 /* -----------------------------------> Section: Gallery */
-
-#gallery-section .gallery-img {
-  width: 500px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 1rem;
+#gallery-section img {
   border: 2px solid var(--color-border);
+  width: 400px;
+  max-height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
 }
 
 /* -----------------------------------> Media Queries */
