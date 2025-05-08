@@ -121,6 +121,34 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 ## Testing & Bug Fixes
 
+❌ Bug #1 – Anchor links didn't scroll correctly to the right section
+
+When clicking on the navigation links like "The Band", "Music", or "Gallery", the scroll did not work properly. Sometimes the section was too high and hidden behind the navbar, and other times it was too low.
+
+This problem made the site feel broken, especially on small screens or when using the mobile menu. It was hard to understand what caused it. I lost almost a full day trying different ideas and also contacted Tutor Support for help.
+
+In the end, the solution was very simple. I added the following CSS to give the body and section elements enough padding from the top, equal to the height of the navbar (72.89px):
+
+body {
+padding-top: 72.89px;
+}
+
+section {
+padding-top: 72.89px;
+}
+
+📸 Screenshots – Before the Fix
+
+![The Band anchor bug](assets\readme-images\bugs\1.png)
+![Music anchor bug](assets\readme-images\bugs\2.png)
+![Gallery anchor bug](assets\readme-images\bugs\3.png)
+
+📸 Screenshots – After the Fix
+
+![The Band anchor fixed](assets/readme-images/bugs/4.png)
+![Music anchor fixed](assets/readme-images/bugs/5.png)
+![Gallery anchor fixed](assets/readme-images/bugs/6.png)
+
 ---
 
 ## Deployment

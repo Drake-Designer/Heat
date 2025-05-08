@@ -242,12 +242,12 @@ section {
 #band-cards .card-pic {
   height: 300px;
   object-fit: cover;
-  object-position: center;
+  border-radius: 1rem;
 }
 
 #band-cards .card {
-  border-radius: 10px;
   border: 2px solid var(--color-border);
+  border-radius: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -282,6 +282,7 @@ section {
 #music-section .music-box {
   background-color: var(--color-navbar-background);
   border: 2px solid var(--color-border);
+  border-radius: 1rem !important;
   transition: 0.3s ease-in;
 }
 
@@ -299,11 +300,36 @@ section {
 
 /* -----------------------------------> Section: Gallery */
 
-.gallery-section img {
-  border: 2px solid var(--color-border);
-  width: 100%;
+#gallery-section .gallery-img {
+  width: 500px;
   height: 400px;
   object-fit: cover;
-  object-position: center;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid var(--color-border);
+}
+
+/* -----------------------------------> Media Queries */
+
+/* --------> 375px */
+@media screen and (max-width: 375px) {
+}
+
+/* --------> 576px */
+@media screen and (min-width: 576px) {
+}
+
+/* --------> 768px */
+@media screen and (min-width: 768px) {
+}
+
+/* --------> 992px */
+@media screen and (min-width: 992px) {
+}
+
+/* --------> 1200px */
+@media screen and (min-width: 1200px) {
+}
+
+/* --------> 1400px */
+@media screen and (min-width: 1400px) {
 }
