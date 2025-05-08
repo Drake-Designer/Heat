@@ -139,9 +139,9 @@ padding-top: 72.89px;
 
 📸 Screenshots – Before the Fix
 
-![The Band anchor bug](assets\readme-images\bugs\1.png)
-![Music anchor bug](assets\readme-images\bugs\2.png)
-![Gallery anchor bug](assets\readme-images\bugs\3.png)
+![The Band anchor bug](assets/readme-images/bugs/1.png)
+![Music anchor bug](assets/readme-images/bugs/2.png)
+![Gallery anchor bug](assets/readme-images/bugs/3.png)
 
 📸 Screenshots – After the Fix
 
