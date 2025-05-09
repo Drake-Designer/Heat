@@ -15,7 +15,7 @@
 <br>
 <br>
 
-## 👉 [Heat Website](assets\favicons\favicon-intro.svg)
+## 👉 [Heat Website](https://drake-designer.github.io/Heat/)
 
 ![HEAT Project Intro Pic](assets/readme-images/website-intro.png)
 
