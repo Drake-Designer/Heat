@@ -160,6 +160,7 @@ section {
   color: var(--color-button-accent);
 }
 
+
 /* -----------------------------------> Animation for hero-text and hero-pic */
 #hero-text h1,
 #hero-text h2,
@@ -311,8 +312,7 @@ section {
 /* -----------------------------------> Media Queries */
 
 /* --------> 320px */
-@media screen and (min-width: 320px) {
-}
+@media screen and (max-width: 576px) {
 
 /* --------> 576px */
 @media screen and (min-width: 576px) {
