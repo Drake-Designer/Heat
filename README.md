@@ -15,7 +15,9 @@
 <br>
 <br>
 
-## 👉 [Heat Website]()
+## 👉 [Heat Website](assets\favicons\favicon-intro.svg)
+
+![HEAT Project Intro Pic](assets/readme-images/website-intro.png)
 
 <br>
 <br>
@@ -41,35 +43,79 @@
 
 ## Project Overview
 
-Heat is a dance-funk band based in Dublin, inspired by the sounds of Daft Punk, Chromeo, and especially Franc Moody. Our music is original, full of groove and positive vibes.. definitely made to get people dancing!
+### Intro
 
-The band started in 2019 through the friendship of Shaneo (vocals), Ati (bass), and Jorge (keys). JT (guitar) joined in 2020, and Dario (drums) completed the lineup in 2023. We’ve been rehearsing for years at Yellow Door Music Studio, recording our tracks both in the studio and at home, and playing live in venues like Bello Bar and The Sugar Club.
+Welcome to the official website of Heat: we are a group of friends who play fun and groovy dance-funk music. Our sound is inspired by bands like Daft Punk, Chromeo and Franc Moody.. full of energy, rhythm and good vibes!
 
-> <strong>This website was created to introduce my band Heat to a wider audience, share our music, promote our upcoming gigs, and make it easy for people to book us for live shows.</strong>
+We started this band for the love of music and performing live gigs. Over time, we’ve played in local venues, recorded our songs, and grown closer as a team. I made this website to share our music with more people, show where we’re playing next, and make it easy for anyone to book us for a show.
 
----
+Whether you want to listen, learn more about us, or come see us live: this is the right place!
+
+### Scope
+
+I have built this website as my first Milestone Project 1 for the Full Stack Web Development course at Code Institute. The idea was to create something real and personal, so I have choses to build a site for my band, Heat.
+
+The main goal of this website is to help more people discover our music, check out our upcoming gigs, and get in touch if they want to book a ticket for a gig. Whether you're a fan, a curious listener, or someone looking to book a band, this site is the place to find everything about Heat.
+
+The site gives visitors a clear idea of who we are, what kind of music we play, and where they can see us live. It also allows fans and event organizers to book us directly.
+
+The site includes the following core features:
+
+- A short introduction about the band
+
+- A Music and Video section where users can listen to some of our songs and watch a few live performance clips
+
+- A Photo Gallery to showcase pictures made during our gigs
+
+- A section for Upcoming Gigs, where users can check where and when we’re playing next
+
+- A Contact page to reach out for questions, messages, or booking requests
+
+These features make sure that users can learn about us, enjoy our content, and easily reach out to us.
 
 ## User Experience Design
 
 ### User Stories
 
-- As a new visitor, I want to learn what kind of music the band plays, so I can decide if I like their style.
+- As a new visitor, I want to learn what kind of music the band plays, so I can decide if I like their style
 
-- As a fan, I want to see upcoming gigs, so I can plan to attend their live shows.
+- As a fan, I want to see upcoming gigs, so I can plan to attend their live shows
 
-- As someone interested in booking the band, I want to find contact details or a booking button easily.
+- As someone interested in booking the band, I want to find contact details or a booking button easily
 
-- As a curious user, I want to explore photos and videos of past performances, so I can see what the live vibe is like.
+- As a curious user, I want to explore photos and videos of past performances, so I can see what the live vibe is like
 
-- As a music lover, I want to listen to samples or clips of the band’s original songs.
+- As a music lover, I want to listen to samples or clips of the band’s original songs
 
-- As a mobile user, I want the site to be easy to use on my phone or tablet.
+- As a mobile user, I want the site to be easy to use on my phone or tablet
 
 ### Structure
 
 ## Design
 
 #### Wireframes
+
+To plan the layout of my website, I used [Balsamiq](https://balsamiq.com/) to create wireframes for different screen sizes. This helped me decide where to place key elements like the logo, navbar, hero image, and text sections.
+
+I made four wireframes, each showing how the site should look on different devices:
+
+- **Desktop**
+- **iPad**
+- **iPhone SE**
+- **Samsung Galaxy S20 Ultra**
+
+Each wireframe includes the same features:
+
+- A simple navbar with links
+- A hero section with text and image
+- A short band description
+- An image carousel
+
+These designs helped me make sure the site looks good and works well on both desktop and mobile devices.
+
+![Wireframes part 1](assets/readme-images/wireframes/wireframe-1.png)
+
+![Wireframes part 2](assets/readme-images/wireframes/wireframe-2.png)
 
 #### Colour Palette
 
@@ -106,18 +152,13 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 3. Extracted files into `assets/favicons/`.
 4. Added the generated `<link>` tags to the `<head>` of `index.html`.
 
-**Screenshots:**
+<br>
 
-- **Favicon Generator Setup**  
-  ![Favicon Generator Preview 1](assets/readme-images/favicon/1.png)
+![Favicon Generator Preview 1](assets/readme-images/favicon/favicon-1.png)
 
-- **Apple Touch Icon & Android Manifest**  
-  ![Favicon Generator Preview 2](assets/readme-images/favicon/2.png)
+![Favicon Generator Preview 2](assets/readme-images/favicon/favicon-2.png)
 
-- **Export Settings & Folder Structure**  
-  ![Favicon Generator Preview 3](assets/readme-images/favicon/3.png)
-
----
+![Favicon Generator Preview 3](assets/readme-images/favicon/favicon-3.png)
 
 ## Testing & Bug Fixes
 
@@ -139,17 +180,15 @@ padding-top: 72.89px;
 
 📸 Screenshots – Before the Fix
 
-![The Band anchor bug](assets/readme-images/bugs/1.png)
-![Music anchor bug](assets/readme-images/bugs/2.png)
-![Gallery anchor bug](assets/readme-images/bugs/3.png)
+![The Band anchor bug](assets/readme-images/bugs/bug-1.png)
+![Music anchor bug](assets/readme-images/bugs/bug-2.png)
+![Gallery anchor bug](assets/readme-images/bugs/bug-3.png)
 
 📸 Screenshots – After the Fix
 
-![The Band anchor fixed](assets/readme-images/bugs/4.png)
-![Music anchor fixed](assets/readme-images/bugs/5.png)
-![Gallery anchor fixed](assets/readme-images/bugs/6.png)
-
----
+![The Band anchor fixed](assets/readme-images/bugs/bug-4.png)
+![Music anchor fixed](assets/readme-images/bugs/bug-5.png)
+![Gallery anchor fixed](assets/readme-images/bugs/bug-6.png)
 
 ## Deployment
 
