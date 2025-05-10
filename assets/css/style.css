@@ -89,6 +89,14 @@ section {
   transition: 0.4s ease-in;
 }
 
+#navbar .brand-active {
+  color: var(--color-logo);
+}
+
+#navbar .active {
+  color: var(--color-button-accent);
+}
+
 /* -----------------------------------> Buttons */
 .btn-primary {
   background-color: var(--color-button-accent);
