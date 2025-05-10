@@ -168,6 +168,13 @@ section {
   color: var(--color-button-accent);
 }
 
+/* ---------------> Upcoming Gigs */
+
+#gigs li {
+  color: white;
+  font-family: var(--font-secondary);
+}
+
 /* -----------------------------------> Animation for hero-text and hero-pic */
 #hero-text h1,
 #hero-text h2,
@@ -320,24 +327,48 @@ section {
 
 /* --------> 320px */
 @media screen and (max-width: 576px) {
+  #gigs li {
+    padding: 1rem;
+    font-size: 20px;
+  }
 }
 
 /* --------> 576px */
 @media screen and (min-width: 576px) {
+  #gigs li {
+    padding: 1rem;
+    font-size: 22px;
+  }
 }
 
 /* --------> 768px */
 @media screen and (min-width: 768px) {
+  #gigs li {
+    padding: 1rem;
+    font-size: 24px;
+  }
 }
 
 /* --------> 992px */
 @media screen and (min-width: 992px) {
+  #gigs li {
+    padding: 1rem;
+    font-size: 26px;
+  }
 }
 
 /* --------> 1200px */
 @media screen and (min-width: 1200px) {
+  #gigs li {
+    padding: 1rem;
+    font-size: 28px;
+  }
 }
 
 /* --------> 1400px */
 @media screen and (min-width: 1400px) {
+  #gigs li {
+    padding: 1rem;
+    font-size: 32px;
+  }
 }
