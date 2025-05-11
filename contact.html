@@ -6,15 +6,15 @@
 
     <meta
       name="description"
-      content="Heat is a dance/funk band born in Dublin, inspired by artists like Daft Punk, Chromeo, and Franc Moody. Discover our music, upcoming gigs, and more."
+      content="Contact us for booking requests, media inquiries, or collaboration opportunities. We're happy to hear from you."
     />
 
     <meta
       name="keywords"
-      content="Heat band, Dublin band, funk band, dance music, Yellow Door Music Studio, live music, Daft Punk style, Chromeo, Franc Moody, gigs, concerts"
+      content="Heat contact, book Heat, Heat band booking, collaboration with Heat, music inquiries, media requests, contact music band, live music bookings"
     />
 
-    <title>Heat | Band Website</title>
+    <title>Heat | Contact</title>
 
     <!-- Bootstrap CSS Link -->
     <link
@@ -91,6 +91,84 @@
         </div>
       </div>
     </nav>
+
+    <!-- Header Section with Hero Image -->
+    <header id="hero-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Text Content -->
+          <div id="hero-text" class="col-6 text-center">
+            <h1 class="display-1 fw-bold">HEAT</h1>
+            <h2 class="display-6 sub-heading">Contact Us!</h2>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="col-6 text-center">
+            <img id="hero-image" src="assets/images/contact-image.png" alt="Band Front Man" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section: Contact -->
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form>
+            <div class="row g-3">
+              <!-- Name -->
+              <div class="col-md-6">
+                <label for="fname" class="form-label">Name</label>
+                <input type="text" id="fname" name="name" class="form-control" />
+              </div>
+
+              <!-- Surname -->
+              <div class="col-md-6">
+                <label for="sname" class="form-label">Surname</label>
+                <input type="text" id="sname" name="surname" class="form-control" />
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" />
+              </div>
+
+              <!-- Phone -->
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone" class="form-control" />
+              </div>
+
+              <!-- Source -->
+              <div class="col-12">
+                <label for="source" class="form-label">Where did you hear about us?</label>
+                <select id="source" name="source" class="form-select" required>
+                  <option value="">Select an option</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="friend">A friend</option>
+                  <option value="live-show">Saw you live</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="mt-5">
