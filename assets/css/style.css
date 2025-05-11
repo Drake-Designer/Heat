@@ -356,7 +356,7 @@ footer h5 {
 @media screen and (max-width: 576px) {
   /* Global */
   body p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   /* Upcoming Gigs */
@@ -370,7 +370,7 @@ footer h5 {
 @media screen and (min-width: 576px) {
   /* Global */
   p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   /* Upcoming Gigs */
@@ -384,7 +384,7 @@ footer h5 {
 @media screen and (min-width: 768px) {
   /* Global */
   p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   /* Upcoming Gigs */
@@ -398,7 +398,7 @@ footer h5 {
 @media screen and (min-width: 992px) {
   /* Global */
   p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   /* Upcoming Gigs */
@@ -412,7 +412,7 @@ footer h5 {
 @media screen and (min-width: 1200px) {
   /* Global */
   p {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   /* Upcoming Gigs */
@@ -426,11 +426,12 @@ footer h5 {
 @media screen and (min-width: 1400px) {
   /* Global */
   p {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
+  /* Upcoming Gigs */
   #gigs li {
     padding: 1rem;
-    font-size: 32px;
+    font-size: 30px;
   }
 }

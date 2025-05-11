@@ -1,4 +1,4 @@
-  <img src="assets/images/code-institute-img.png" alt="Code Institute Project" width="250">
+  <img src="assets/readme-images/code-institute-img.png" alt="Code Institute Project" width="250">
 
   <br>
   <br>
