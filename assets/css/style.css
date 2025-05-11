@@ -117,6 +117,10 @@ section {
   margin: 0;
 }
 
+#hidden-btn {
+  visibility: hidden;
+}
+
 /* -----------------------------------> Modal Button */
 
 #book-now-box {
