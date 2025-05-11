@@ -23,6 +23,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png" />
     <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
@@ -114,7 +115,6 @@
     </header>
 
     <!-- Section: Gigs -->
-
     <section id="gigs" class="container">
       <div class="mb-5">
         <h2 class="display-5 mb-4">Come see us!</h2>
@@ -296,17 +296,18 @@
     </div>
 
     <!-- Font Awesome Link -->
-    <script src="https://kit.fontawesome.com/1632434743.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1632434743.js" crossorigin="anonymous" defer></script>
 
     <!-- Bootstrap JS Link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
+      defer
     ></script>
 
     <!-- Bootstrap JS mobile navbar -->
-    <script>
+    <script defer>
       document.querySelectorAll('.navbar-collapse .nav-link').forEach((link) => {
         link.addEventListener('click', function (e) {
           let section = document.querySelector(e.target.getAttribute('href'));

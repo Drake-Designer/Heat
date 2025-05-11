@@ -91,6 +91,30 @@ These features make sure that users can learn about us, enjoy our content, and e
 
 ### Structure
 
+The website has one main index page that includes three key sections, plus two extra pages:
+
+#### Heat (Home)
+
+The homepage is made up of three sections that visitors can easily access through the navbar:
+
+- **The Band** – A short introduction about who we are, how we started, and the kind of music we play
+- **Music** – A section where users can listen to some of our original songs and watch live performance videos
+- **Gallery** – A photo section with snapshots from our gigs
+
+These sections are all part of the same page and use anchor links to scroll smoothly to the right spot.
+
+#### Upcoming Gigs
+
+This page displays a list of our upcoming concerts, with details like the date, venue name, and location. At the top of the page (in the header), there’s a **"Book your spot!"** modal button that allows users to reserve tickets for future gigs.
+
+I decided to place the button only in the header and used `visibility: hidden` to hide it from the navbar, so it wouldn’t appear twice.
+
+#### Contact
+
+A simple contact page with a message form and our contact info, so people can easily reach out for bookings, questions, or just to say hello.
+
+> The entire site is fully responsive and works well on all screen sizes. The layout is clear, friendly, and reflects the fun personality of the band.
+
 ## Design
 
 #### Wireframes
@@ -119,29 +143,95 @@ These designs helped me make sure the site looks good and works well on both des
 
 #### Colour Palette
 
+For this project, I decided to create a custom colour palette by manually picking colours from one of our band photos.
+
+I used an online image color picker to extract the main tones directly from a live performance picture. This helped me build a palette that really feels connected to our style, our stage lights, and the atmosphere of our gigs.
+
+Here are the colours I chose:
+
+```css
+/* Colour Palette */
+--color-button-accent: #00a7e8; /* Bright electric blue – used for buttons and call-to-action elements */
+--color-border: #26050a; /* Deep burgundy – used for borders and small accents */
+--color-navbar-background: #4d2829; /* Rich dark red – used as the main navbar background */
+--color-background: #313669; /* Muted dark blue – used in sections and containers */
+--color-main: #0d0c18; /* Nearly black – used as the main page background */
+--color-logo: #ea40e6; /* Bright purple – used in the logo for contrast and pop */
+```
+
+![Colour Picker with Photo](assets\readme-images\colour-palette\colour-palette-1.png)
+
+![Custom Colour Palette](assets\readme-images\colour-palette\colour-palette-2.png)
+
 #### Typography
+
+For this project, I used a combination of four different [Google Fonts](https://fonts.google.com/) to give the website a modern, clean, and slightly 'funky' style.
+
+Each font was picked for a specific role:
+
+- **Montserrat** – Used as the main body font for most text content
+- **Open Sans** – Used for extra readability where needed
+- **Saira Condensed** – Used in headings for a bold and sharp look
+- **Audiowide** – Used only for the logo, to give it a unique and musical feel
+
+All fonts are imported from Google Fonts and declared as custom variables in the `:root` selector for easier management across the site.
+
+```css
+/* Google Fonts ---> Montserrat + Open Sans + Saira Condensed + Audiowide */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Typography */
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --font-headings: 'Saira Condensed', sans-serif;
+  --font-logo: 'Audiowide', cursive;
+}
+```
 
 ---
 
 ## Features
 
-> - Fully responsive layout
-> - Audio embeds
-> - Image gallery
-> - Social media links
-> - Custom favicon
+This website includes the following key features:
+
+- **Fully responsive layout** – Works smoothly on desktop, tablet, and mobile devices
+- **Anchor-based navigation** – The homepage uses anchor links to scroll between sections
+- **Embedded audio players** – Visitors can listen to our original songs directly on the site
+- **Live performance videos** – Watch us in action with video clips from past gigs
+- **Photo gallery** – A collection of images from our shows
+- **Upcoming gigs section** – A dedicated page listing future shows with dates and venues
+- **"Book your spot!" modal button** – A call-to-action to reserve tickets for upcoming concerts
+- **Contact form** – Simple form to get in touch for bookings or questions
+- **Custom favicon and logo** – Designed to reflect our style and brand
+- **Dark theme with custom colour palette** – Inspired by the lights and mood of our live shows
+- **Clean, modern typography** – Using a mix of Google Fonts for headings, text, and logo
 
 ---
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- GitHub
-- Visual Studio Code
+This project was built using the following tools and technologies:
 
-### Favicon Creation & Integration
+- [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) – For structuring the content of the pages
+- [**CSS3**](https://developer.mozilla.org/en-US/docs/Web/CSS) – For styling the layout, colours, fonts, and responsiveness
+- [**Bootstrap 5**](https://getbootstrap.com/) – For responsive design and reusable components like navbar, grid, and buttons
+- [**GitHub**](https://github.com/) – For version control and project hosting via GitHub Pages
+- [**Visual Studio Code**](https://code.visualstudio.com/) – The main code editor used during development
+
+Design & Media Tools:
+
+- [**Balsamiq**](https://balsamiq.com/) – Used to create wireframes for different screen sizes
+- [**Google Fonts**](https://fonts.google.com/) – For importing and using custom fonts like Montserrat, Audiowide, etc.
+- [**RealFaviconGenerator**](https://realfavicongenerator.net/) – Used to generate a full set of favicons for multiple devices \*
+- [**Squoosh**](https://squoosh.app/) – For compressing and optimizing images for faster load times. I used Squoosh to reduce the file size of all images without losing quality. This helped the website load faster, especially on mobile devices. I mostly exported images as `.webp` format and adjusted compression to balance quality and performance.
+
+- [**HandBrake**](https://handbrake.fr/) – Used to compress and convert video files into web-friendly formats. I used HandBrake to reduce the file size of my video clips while keeping good quality. This helped improve page load time without losing the vibe of our live performances.
+
+- [**Online Audio Converter**](https://online-audio-converter.com/) – To convert audio files into `.mp3` format for the music section. I used this online tool to convert `.wav` files into high-quality `.mp3` at 320 kbps, which helped reduce file size while keeping good sound quality.
+
+### \*Favicon Creation & Integration
 
 To create a full set of favicons compatible with all major platforms (desktop, Android, iOS), I have used the online tool [RealFaviconGenerator](https://realfavicongenerator.net).
 
@@ -162,7 +252,7 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 ## Testing & Bug Fixes
 
-❌ Bug #1 – Anchor links didn't scroll correctly to the right section
+### ❌ Bug #1 – Anchor links didn't scroll correctly to the right section
 
 When clicking on the navigation links like "The Band", "Music", or "Gallery", the scroll did not work properly. Sometimes the section was too high and hidden behind the navbar, and other times it was too low.
 
@@ -190,6 +280,62 @@ padding-top: 72.89px;
 ![Music anchor fixed](assets/readme-images/bugs/bug-5.png)
 ![Gallery anchor fixed](assets/readme-images/bugs/bug-6.png)
 
+### ❌ Bug #2 – Low colour contrast in some areas
+
+While working on the site, I noticed that some text and buttons were not easy to read because the colours didn’t have enough contrast. This was more noticeable on small screens or in dark environments.
+
+To check and fix this, I used [Contrast Grid](https://contrast-grid.eightshapes.com/) to test all the colours I used. This tool helps make sure that text is easy to read and follows the [WCAG 2.0](https://www.w3.org/TR/WCAG20/) accessibility rules.
+
+Here is the result of the test:
+
+![Contrast Grid](assets\readme-images\contrast-grid\contrast-grid.png)
+
+✅ Most colour combinations passed the test (like the bright blue on dark backgrounds)
+
+⚠️ A few very dark combinations didn’t pass, but I only used those in places without text
+
+Thanks to this test, I made sure the important parts of the site are clear and easy to read for everyone.
+
 ## Deployment
+
+The website was deployed early in the project, right after the home page (HTML and CSS) was set up and tested.
+
+Deployment was done using **GitHub Pages**, directly from the `main` branch of the repository.
+
+### 🌐 Live Site
+
+You can view the live project here:  
+👉 [https://drake-designer.github.io/Heat/](https://drake-designer.github.io/Heat/)
+
+### 🔧 How Deployment Was Done
+
+1. Opened the GitHub repository for the project
+2. Clicked on the `Settings` tab at the top of the page
+3. From the sidebar on the left, selected the **Pages** section
+4. In the **Branch** section:
+   - Chose `main` as the source
+   - Selected `/ (root)` as the folder
+5. Clicked **Save**
+6. After a few seconds, GitHub provided a live link to the deployed site
+
+---
+
+### 💻 How to Clone This Repository Locally
+
+If you'd like to clone this project and work on it locally, follow these steps:
+
+1. Go to the repository page:  
+   👉 [https://github.com/drake-designer/Heat](https://github.com/drake-designer/Heat)
+
+2. Click the green **Code** button
+
+3. Copy the URL shown (it should look like `https://github.com/username/repo-name.git`)
+
+4. Open your terminal and change directory to where you want to store the project
+
+5. Type the following command and press Enter:
+   ```bash
+   git clone https://github.com/drake-designer/Heat.git
+   ```
 
 ## Credits
