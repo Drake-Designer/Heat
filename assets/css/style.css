@@ -327,7 +327,7 @@ section {
   border: 2px solid var(--color-border);
 }
 
-/* -------------------> Footer */
+/* -----------------------------------> Footer */
 
 footer {
   border-radius: 1.5rem;
@@ -341,6 +341,7 @@ footer a {
 footer a:hover {
   color: var(--color-button-accent) !important;
   text-decoration: underline;
+  text-decoration: none;
 }
 
 footer h5 {
