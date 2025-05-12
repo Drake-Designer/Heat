@@ -36,8 +36,9 @@
 4. ### [Technologies Used](#technologies-used) 🛠️
    - #### [Favicon Creation & Integration](#favicon-creation--integration) 🖼️
 5. ### [Testing & Bug Fixes](#testing--bug-fixes) 🧪
-6. ### [Deployment](#deployment) 🚀
-7. ### [Credits](#credits) 🙏
+6. ### [Validation](#validation) ✅
+7. ### [Deployment](#deployment) 🚀
+8. ### [Credits](#credits) 🙏
 
 ---
 
@@ -47,9 +48,9 @@
 
 Welcome to the official website of Heat: we are a group of friends who play fun and groovy dance-funk music. Our sound is inspired by bands like Daft Punk, Chromeo and Franc Moody.. full of energy, rhythm and good vibes!
 
-We started this band for the love of music and performing live gigs. Over time, we’ve played in local venues, recorded our songs, and grown closer as a team. I made this website to share our music with more people, show where we’re playing next, and make it easy for anyone to book us for a show.
+We all share a strong passion for music and enjoy listening to the same styles, so playing together felt natural from the start. Over time, we’ve played in local venues, recorded our songs, and grown closer as a team. I made this website to share our music with more people, show where we’re playing next, and make it easy for anyone to book us for a show.
 
-Whether you want to listen, learn more about us, or come see us live: this is the right place!
+Whether you want to listen, learn more about us, or come see us live.. this is the right place!
 
 ### Scope
 
@@ -71,9 +72,29 @@ The site includes the following core features:
 
 - A Contact page to reach out for questions, messages, or booking requests
 
-These features make sure that users can learn about us, enjoy our content, and easily reach out to us.
-
 ## User Experience Design
+
+During the UX planning phase, I used the 5 UX Planes and Design Thinking process to define user needs and structure the site accordingly.
+
+**Primary users:**
+
+- Music lovers looking for new original dance/funk bands
+- Venue owners interested in booking bands
+- Fans and curious visitors wanting to explore our music
+
+**Problems they face:**
+
+- No clear way to discover or listen to our music
+- Difficulty finding gig dates or contact info
+- No professional booking method
+
+**Goals:**
+
+- Showcase Heat's identity and sound
+- Promote our gigs and original songs
+- Provide a clear, professional way to book us
+
+![UX Planning](assets\readme-images\ux-worksheet-strategy.png)
 
 ### User Stories
 
@@ -151,11 +172,11 @@ Here are the colours I chose:
 
 ```css
 /* Colour Palette */
---color-button-accent: #1a75cf; /* Deep blue used for buttons with improved text readability */
---color-border: #26050a; /* Deep burgundy – used for borders and small accents */
---color-navbar-background: #4d2829; /* Rich dark red – used as the main navbar background */
---color-main: #0d0c18; /* Nearly black – used as the main page background */
---color-logo: #ea40e6; /* Bright purple – used in the logo for contrast and pop */
+--color-button-accent: #1a75cf; /* Deep blue - used for buttons */
+--color-border: #26050a; /* Deep burgundy - used for borders and small accents */
+--color-navbar-background: #4d2829; /* Rich dark red - used as the main navbar background */
+--color-main: #0d0c18; /* Nearly black - used as the main page background */
+--color-logo: #ea40e6; /* Bright purple - used in the logo for contrast and pop */
 ```
 
 ![Colour Picker with Photo](assets\readme-images\colour-palette\colour-palette-1.png)
@@ -243,7 +264,7 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 <br>
 
-![Favicon Generator Preview 1](assets/readme-images/favicon/favicon-1.png)
+![Favicon Generator Preview 1](assets\readme-images\favicon\favicon-1.png)
 
 ![Favicon Generator Preview 2](assets/readme-images/favicon/favicon-2.png)
 
@@ -251,7 +272,59 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 ## Testing & Bug Fixes
 
-### ❌ Bug #1 – Anchor links didn't scroll correctly to the right section
+### 🧪 Lighthouse Performance Testing
+
+To check the overall performance and quality of the website, I used the [Lighthouse tool](https://developer.chrome.com/docs/lighthouse/overview/) built into Chrome DevTools. This tool evaluates key areas such as performance, accessibility, and best practices.
+
+I ran the Lighthouse audit on the **live deployed site** in **Incognito mode**, to avoid interference from browser extensions or cached data:
+
+👉 [https://drake-designer.github.io/Heat/](https://drake-designer.github.io/Heat/)
+
+#### 🖥️ Desktop results:
+
+- **Performance:** 98
+- **Accessibility:** 100
+- **Best Practices:** 100
+
+![Lighthouse Desktop Report](assets\readme-images\lighthouse\lighthouse-desktop.png)
+
+<br>
+
+#### 📱 Mobile results:
+
+- **Performance:** 74
+- **Accessibility:** 100
+- **Best Practices:** 100
+
+![Lighthouse Mobile Report](assets\readme-images\lighthouse\lighthouse-mobile.png)
+
+Although the performance score is slightly lower on mobile devices, this is common for media-rich websites. To optimise load speed and responsiveness, I have:
+
+- Compressed all images using [Squoosh](https://squoosh.app/)
+- Converted large images to `.webp` format
+- Reduced video file sizes with [HandBrake](https://handbrake.fr/)
+
+These optimisations helped the site maintain excellent results in accessibility and best practices, with solid performance overall.
+
+### ♿ Accessibility Testing with WAVE
+
+To check if my website is accessible for all users, I used the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/).
+
+This tool checks if the site is easy to use for people with different abilities — for example, using screen readers, keyboard navigation, or high contrast settings.
+
+Here are the results:
+
+- ✅ **0 Errors**
+- ✅ **0 Contrast Errors**
+- ⚠️ **11 Alerts** (mostly related to redundant ARIA attributes and landmark roles)
+- ✅ **All main headings, alt text, and structure were recognised correctly**
+
+![WAVE Accessibility Report](assets\readme-images\wave-accesibility\wave.png)
+
+These results show that the website follows accessibility best practices.  
+There are no major issues, but manual testing is still important to be sure everything works well for everyone.
+
+### ❌ Bug #1 – Anchor links didn't scroll to the correct section
 
 When clicking on the navigation links like "The Band", "Music", or "Gallery", the scroll did not work properly. Sometimes the section was too high and hidden behind the navbar, and other times it was too low.
 
@@ -279,7 +352,7 @@ padding-top: 72.89px;
 ![Music anchor fixed](assets/readme-images/bugs/bug-5.png)
 ![Gallery anchor fixed](assets/readme-images/bugs/bug-6.png)
 
-### ❌ Bug #2 – Low colour contrast in some areas
+### ❌ Bug #2 – Low colour contrast in site-wide palette (general issue)
 
 While working on the site, I noticed that some text and buttons were not easy to read because the colours didn’t have enough contrast. This was more noticeable on small screens or in dark environments.
 
@@ -289,43 +362,53 @@ Here is the result of the test:
 
 ![Contrast Grid](assets\readme-images\contrast-grid\contrast-grid.png)
 
-✅ Most colour combinations passed the test (like the bright blue on dark backgrounds)
-
-⚠️ A few very dark combinations didn’t pass, but I only used those in places without text
-
-Thanks to this test, I made sure the important parts of the site are clear and easy to read for everyone.
-
-### ❌ Bug #3 – Low contrast on main button (accessibility issue)
+### ❌ Bug #3 – Low contrast on primary button (specific UI issue)
 
 While testing the site for accessibility using the WAVE evaluation tool and the WebAIM Contrast Checker, I noticed that the main call-to-action buttons (like "Book your spot!") didn’t have enough contrast between the background color and the white text.
 
 The original CSS value for the button color was:
 
 ```css
---color-button-accent: #00a7e8; /* Bright electric blue */
+--color-button-accent: #00a7e8; /* Bright electric blue - used for buttons */
 ```
 
-Although this color looked visually nice, it had a contrast ratio of 2.72:1, which is below the minimum required by WCAG 2.1 accessibility standards (4.5:1 for normal text). This made it harder to read for users with vision impairments or when viewing the site in low-light conditions.
+Even though the color looked nice, it wasn’t easy to read, especially for people with vision problems or in dark environments.
 
 🛠️ Fix:
 
 To solve this, I updated the color to a darker and more accessible shade of blue:
 
 ```css
---color-button-accent: #1a75cf; /* Accessible blue – ensures good contrast */
+--color-button-accent: #1a75cf; /* Deep blue - used for buttons */
 ```
 
-This new color gives a contrast ratio of 4.61:1, which passes WCAG AA requirements and makes the text on buttons easier to read on all devices and for all users.
+> **Note:** The old color `#00a7e8` is not shown in the grid below, but it had a very low contrast ratio and did not meet WCAG guidelines. The new color `#1a75cf` is included and passes the test. Most important text and background combinations in the palette meet the WCAG 2.1 AA contrast standard. Some darker color pairs do not pass, but they are only used for decorative elements or areas without text, so they do not affect too much accessibility.
 
-📸 Before the fix:
+## Validation ✅
 
-📸 After the fix:
+To make sure my code was clean and followed best practices, I tested my HTML and CSS using the following online validation tools:
+
+- [W3C Markup Validator](https://validator.w3.org/#validate_by_input) – to check for any HTML errors or missing elements
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) – to check for any CSS mistakes or incorrect rules
+- [Autoprefixer](https://autoprefixer.github.io/) – to add vendor prefixes automatically for better browser compatibility
+
+All my HTML code passed validation successfully, with the exception of some small warnings. These were "info-level" messages about the use of self-closing tags (e.g. `<meta />`, `<img />`, `<input />`).
+
+> **These warnings were caused by the Prettier extension in VS Code, which automatically formats empty tags with a `/` at the end. This syntax is valid in XHTML but not required in HTML5. The code still works perfectly in all browsers and does not cause display issues or accessibility problems.**
+
+My CSS passed validation as well. However, after using Autoprefixer, the validator showed a few expected warnings:
+
+- Some vendor prefixes like `-webkit-`, `-ms-`, or `-o` were automatically added to support different browsers
+- Some warnings said that CSS variables (like `var(--example)`) could not be statically checked
+- The `@import` line for Google Fonts is ignored by the validator, which may cause a note at the top
+
+> These are not errors and do not affect how the website works and all styles and features display correctly on modern browsers.
 
 ## Deployment
 
 The website was deployed early in the project, right after the home page (HTML and CSS) was set up and tested.
 
-Deployment was done using **GitHub Pages**, directly from the `main` branch of the repository.
+Deployment was done using GitHub Pages, directly from the main branch of the repository.
 
 ### 🌐 Live Site
 
@@ -342,8 +425,6 @@ You can view the live project here:
    - Selected `/ (root)` as the folder
 5. Clicked **Save**
 6. After a few seconds, GitHub provided a live link to the deployed site
-
----
 
 ### 💻 How to Clone This Repository Locally
 
@@ -364,3 +445,55 @@ If you'd like to clone this project and work on it locally, follow these steps:
    ```
 
 ## Credits
+
+### 👨‍🏫 Walkthrough Project Inspiration – _Boardwalk Games_
+
+A big part of the layout and structure of my website was inspired by one of the guided projects from the course:
+
+**Boardwalk Games**  
+👉 GitHub: [Boardwalk-Games](https://github.com/Drake-Designer/Boardwalk-Games)  
+👉 Course Link: [Code Institute – Boardwalk Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+BG+2/courseware/21d4dc3fa8f0407a8359ceb1d6fc0c51/c113d413c91d4d789399ce5b1303f2fa/)
+
+This was one of the most fun and helpful parts of the course for me. Thanks to this project, I was able to learn and then use **Bootstrap** properly, and I really enjoyed working with it! I used that knowledge to build the layout of my own project and adapted it for my band website.
+
+One specific part of the JavaScript was copied directly from the Boardwalk Games project:
+
+```html
+<!-- Bootstrap JS mobile navbar -->
+<script defer>
+  document.querySelectorAll('.navbar-collapse .nav-link').forEach((link) => {
+    link.addEventListener('click', function (e) {
+      let section = document.querySelector(e.target.getAttribute('href'));
+      if (section) {
+        e.preventDefault();
+        let navbarHeight = document.querySelector('.navbar-toggler').offsetHeight;
+        window.scroll({
+          top: section.offsetTop - navbarHeight,
+          behavior: 'smooth',
+        });
+        document.querySelector('.navbar-collapse').classList.remove('show');
+      }
+    });
+  });
+</script>
+```
+
+Without this guided project, I wouldn’t have been able to use Bootstrap the way I did or build this site the way I imagined it (and honestly, I really like how it turned out... and I hope you do too! 😄)
+
+> A big thank you and full credit goes to **Jo Heyndels** , the creator of the Boardwalk Games walkthrough project!!!
+
+<br>
+
+### 🎵 Visual Inspiration – _Azure Band Website_
+
+Another source of inspiration for this project was the website of an Irish band based in Dublin: [https://www.azureband.ie/](https://www.azureband.ie/)
+
+I didn’t take any code from their site, I only looked at the visual style and took inspiration from their layout and design choices.
+
+In particular:
+
+- I liked how their hero image is placed on the right, with a subtle animation effect. I used a similar idea in my own site by creating a custom animation with CSS keyframes.
+- The idea of having three main sections ("The Band", "Music", and "Gallery") all in a single scrolling page also came from them. I thought it was a smart way to keep the site clean and easy to navigate.
+- The colour scheme ended up looking a bit similar too, but that was just a coincidence. I created my palette by picking colours from one of our own gig photos.
+
+So even if I didn’t reuse anything from their code, their website was definitely a useful visual reference while building mine.
