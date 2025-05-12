@@ -151,10 +151,9 @@ Here are the colours I chose:
 
 ```css
 /* Colour Palette */
---color-button-accent: #00a7e8; /* Bright electric blue – used for buttons and call-to-action elements */
+--color-button-accent: #1a75cf; /* Deep blue used for buttons with improved text readability */
 --color-border: #26050a; /* Deep burgundy – used for borders and small accents */
 --color-navbar-background: #4d2829; /* Rich dark red – used as the main navbar background */
---color-background: #313669; /* Muted dark blue – used in sections and containers */
 --color-main: #0d0c18; /* Nearly black – used as the main page background */
 --color-logo: #ea40e6; /* Bright purple – used in the logo for contrast and pop */
 ```
@@ -295,6 +294,32 @@ Here is the result of the test:
 ⚠️ A few very dark combinations didn’t pass, but I only used those in places without text
 
 Thanks to this test, I made sure the important parts of the site are clear and easy to read for everyone.
+
+### ❌ Bug #3 – Low contrast on main button (accessibility issue)
+
+While testing the site for accessibility using the WAVE evaluation tool and the WebAIM Contrast Checker, I noticed that the main call-to-action buttons (like "Book your spot!") didn’t have enough contrast between the background color and the white text.
+
+The original CSS value for the button color was:
+
+```css
+--color-button-accent: #00a7e8; /* Bright electric blue */
+```
+
+Although this color looked visually nice, it had a contrast ratio of 2.72:1, which is below the minimum required by WCAG 2.1 accessibility standards (4.5:1 for normal text). This made it harder to read for users with vision impairments or when viewing the site in low-light conditions.
+
+🛠️ Fix:
+
+To solve this, I updated the color to a darker and more accessible shade of blue:
+
+```css
+--color-button-accent: #1a75cf; /* Accessible blue – ensures good contrast */
+```
+
+This new color gives a contrast ratio of 4.61:1, which passes WCAG AA requirements and makes the text on buttons easier to read on all devices and for all users.
+
+📸 Before the fix:
+
+📸 After the fix:
 
 ## Deployment
 

@@ -10,12 +10,10 @@
   --font-logo: 'Audiowide', cursive;
 
   /* Colour Palette */
-  --color-button-accent: #0074cc;
+  --color-button-accent: #1a75cf;
   --color-border: #26050a;
   --color-navbar-background: #4d2829;
-  --color-background: #313669;
   --color-main: #0d0c18;
-
   --color-logo: #ea40e6;
 }
 
@@ -83,7 +81,7 @@ section {
 }
 
 #navbar .nav-link {
-  color: whitesmoke;
+  color: #ffffff;
 }
 
 #navbar .nav-link:hover {
