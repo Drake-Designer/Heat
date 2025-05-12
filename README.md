@@ -244,14 +244,14 @@ Design & Media Tools:
 
 - [**Balsamiq**](https://balsamiq.com/) – Used to create wireframes for different screen sizes
 - [**Google Fonts**](https://fonts.google.com/) – For importing and using custom fonts like Montserrat, Audiowide, etc.
-- [**RealFaviconGenerator**](https://realfavicongenerator.net/) – Used to generate a full set of favicons for multiple devices \*
+- [**RealFaviconGenerator**](https://realfavicongenerator.net/) – Used to generate a full set of favicons for multiple devices
 - [**Squoosh**](https://squoosh.app/) – For compressing and optimizing images for faster load times. I used Squoosh to reduce the file size of all images without losing quality. This helped the website load faster, especially on mobile devices. I mostly exported images as `.webp` format and adjusted compression to balance quality and performance.
 
 - [**HandBrake**](https://handbrake.fr/) – Used to compress and convert video files into web-friendly formats. I used HandBrake to reduce the file size of my video clips while keeping good quality. This helped improve page load time without losing the vibe of our live performances.
 
 - [**Online Audio Converter**](https://online-audio-converter.com/) – To convert audio files into `.mp3` format for the music section. I used this online tool to convert `.wav` files into high-quality `.mp3` at 320 kbps, which helped reduce file size while keeping good sound quality.
 
-### \*Favicon Creation & Integration
+### Favicon Creation & Integration
 
 To create a full set of favicons compatible with all major platforms (desktop, Android, iOS), I have used the online tool [RealFaviconGenerator](https://realfavicongenerator.net).
 
@@ -384,7 +384,7 @@ To solve this, I updated the color to a darker and more accessible shade of blue
 
 > **Note:** The old color `#00a7e8` is not shown in the grid below, but it had a very low contrast ratio and did not meet WCAG guidelines. The new color `#1a75cf` is included and passes the test. Most important text and background combinations in the palette meet the WCAG 2.1 AA contrast standard. Some darker color pairs do not pass, but they are only used for decorative elements or areas without text, so they do not affect too much accessibility.
 
-## Validation ✅
+## Validation
 
 To make sure my code was clean and followed best practices, I tested my HTML and CSS using the following online validation tools:
 
