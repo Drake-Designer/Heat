@@ -94,7 +94,7 @@ During the UX planning phase, I used the 5 UX Planes and Design Thinking process
 - Promote our gigs and original songs
 - Provide a clear, professional way to book us
 
-![UX Planning](assets\readme-images\ux-worksheet-strategy.png)
+![UX Planning](assets/readme-images/ux-worksheet-strategy.png)
 
 ### User Stories
 
@@ -179,9 +179,9 @@ Here are the colours I chose:
 --color-logo: #ea40e6; /* Bright purple - used in the logo for contrast and pop */
 ```
 
-![Colour Picker with Photo](assets\readme-images\colour-palette\colour-palette-1.png)
+![Colour Picker with Photo](assets/readme-images/colour-palette/colour-palette-1.png)
 
-![Custom Colour Palette](assets\readme-images\colour-palette\colour-palette-2.png)
+![Custom Colour Palette](assets/readme-images/colour-palette/colour-palette-2.png)
 
 #### Typography
 
@@ -264,7 +264,7 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 <br>
 
-![Favicon Generator Preview 1](assets\readme-images\favicon\favicon-1.png)
+![Favicon Generator Preview 1](assets/readme-images/favicon/favicon-1.png)
 
 ![Favicon Generator Preview 2](assets/readme-images/favicon/favicon-2.png)
 
@@ -286,7 +286,7 @@ I ran the Lighthouse audit on the **live deployed site** in **Incognito mode**, 
 - **Accessibility:** 100
 - **Best Practices:** 100
 
-![Lighthouse Desktop Report](assets\readme-images\lighthouse\lighthouse-desktop.png)
+![Lighthouse Desktop Report](assets/readme-images/lighthouse/lighthouse-desktop.png)
 
 <br>
 
@@ -296,7 +296,7 @@ I ran the Lighthouse audit on the **live deployed site** in **Incognito mode**, 
 - **Accessibility:** 100
 - **Best Practices:** 100
 
-![Lighthouse Mobile Report](assets\readme-images\lighthouse\lighthouse-mobile.png)
+![Lighthouse Mobile Report](assets/readme-images/lighthouse/lighthouse-mobile.png)
 
 Although the performance score is slightly lower on mobile devices, this is common for media-rich websites. To optimise load speed and responsiveness, I have:
 
@@ -319,7 +319,7 @@ Here are the results:
 - ⚠️ **11 Alerts** (mostly related to redundant ARIA attributes and landmark roles)
 - ✅ **All main headings, alt text, and structure were recognised correctly**
 
-![WAVE Accessibility Report](assets\readme-images\wave-accesibility\wave.png)
+![WAVE Accessibility Report](assets/readme-images/wave-accesibility/wave.png)
 
 These results show that the website follows accessibility best practices.  
 There are no major issues, but manual testing is still important to be sure everything works well for everyone.
@@ -360,7 +360,7 @@ To check and fix this, I used [Contrast Grid](https://contrast-grid.eightshapes.
 
 Here is the result of the test:
 
-![Contrast Grid](assets\readme-images\contrast-grid\contrast-grid.png)
+![Contrast Grid](assets/readme-images/contrast-grid/contrast-grid.png)
 
 ### ❌ Bug #3 – Low contrast on primary button (specific UI issue)
 
