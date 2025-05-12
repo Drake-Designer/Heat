@@ -620,7 +620,6 @@
             <h2>Upcoming Gigs</h2>
             <ul class="list-unstyled">
               <!-- Gigs -->
-
               <li>📍 The Imperial Hotel - 23 August 2025 - Park Street, Dundalk</li>
               <li>📍 Spirit Store - 16 August 2025 - George's Quay, Dundalk</li>
               <li>📍 The Lighthouse - 9 August 2025 - 88 George's St Lower, Dún Laoghaire</li>
@@ -630,36 +629,36 @@
               <li>📍 Whelan's - 3 July 2025 - 25 Wexford Street, Dublin 2</li>
             </ul>
             <hr />
-            <form action="success-form.html" method="GET">
+            <form>
               <div class="row g-3">
                 <!-- Name -->
                 <div class="col-md-6">
-                  <label for="fname" class="form-label">Name</label>
-                  <input type="text" id="fname" class="form-control" required />
+                  <label for="modal-name" class="form-label">Name</label>
+                  <input type="text" id="modal-name" class="form-control" required />
                 </div>
 
                 <!-- Surname -->
                 <div class="col-md-6">
-                  <label for="sname" class="form-label">Surname</label>
-                  <input type="text" id="sname" class="form-control" required />
+                  <label for="modal-surname" class="form-label">Surname</label>
+                  <input type="text" id="modal-surname" class="form-control" required />
                 </div>
 
                 <!-- Phone -->
                 <div class="col-md-6">
-                  <label for="phone" class="form-label">Phone Number</label>
-                  <input type="tel" id="phone" class="form-control" pattern="[0-9+\s\-]+" required />
+                  <label for="modal-phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="modal-phone" class="form-control" pattern="[0-9+\s\-]+" required />
                 </div>
 
                 <!-- Email -->
                 <div class="col-md-6">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" id="email" class="form-control" required />
+                  <label for="modal-email" class="form-label">Email</label>
+                  <input type="email" id="modal-email" class="form-control" required />
                 </div>
 
                 <!-- Gigs -->
                 <div class="col-md-8">
-                  <label for="gig" class="form-label">Select Gig</label>
-                  <select id="gig" class="form-select" required>
+                  <label for="modal-gig" class="form-label">Select Gig</label>
+                  <select id="modal-gig" class="form-select" required>
                     <option value="">Choose a Gig</option>
                     <option value="imperial">The Imperial Hotel - 23 August 2025</option>
                     <option value="spirit">Spirit Store - 16 August 2025</option>
@@ -673,8 +672,8 @@
 
                 <!-- Tickets -->
                 <div class="col-md-2">
-                  <label for="tickets" class="form-label">Tickets</label>
-                  <input type="number" id="tickets" class="form-control" min="1" max="5" required />
+                  <label for="modal-tickets" class="form-label">Tickets</label>
+                  <input type="number" id="modal-tickets" class="form-control" min="1" max="5" required />
                 </div>
 
                 <!-- Submit Button -->
