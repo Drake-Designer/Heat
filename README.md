@@ -272,6 +272,41 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 ## Testing & Bug Fixes
 
+### 👨‍💻 Manual Testing on Real Devices
+
+I tested the website on several real devices and browsers to make sure it works properly on different screen sizes and operating systems.
+
+#### 📱 Mobile & Tablet Devices:
+
+- **iPhone 15 Pro**
+- **iPhone 15 Pro Max**
+- **iPad Pro**
+
+#### 💻 Desktop Devices:
+
+- **Windows PC**
+- **iMac**
+
+On each device, I checked the following:
+
+- The layout adjusts correctly to different screen sizes (responsive design)
+- Navigation links, buttons, and forms all work as expected
+- Anchor links scroll smoothly to the right sections
+- Audio and video content loads and plays correctly
+- The contact form accepts input and can be submitted without issues
+
+### 🧑‍🤝‍🧑 Testing with Friends and Peers
+
+To get real user feedback, I also asked some friends and fellow students from the course to try the website on their own phones, tablets, and laptops.
+
+They helped test:
+
+- How easy and intuitive the website is to use on mobile devices
+- If it’s clear how to find key content like music, gig info, and contact details
+- Whether the website feels smooth and works well overall
+
+Their feedback was very positive and confirmed that the website is user-friendly, visually clear, and functional across a wide range of devices. This helped me make a few small adjustments to improve the experience even more.
+
 ### 🧪 Lighthouse Performance Testing
 
 To check the overall performance and quality of the website, I used the [Lighthouse tool](https://developer.chrome.com/docs/lighthouse/overview/) built into Chrome DevTools. This tool evaluates key areas such as performance, accessibility, and best practices.
@@ -460,7 +495,7 @@ One specific part of the JavaScript was copied directly from the Boardwalk Games
 
 ```html
 <!-- Bootstrap JS mobile navbar -->
-<script defer>
+<script>
   document.querySelectorAll('.navbar-collapse .nav-link').forEach((link) => {
     link.addEventListener('click', function (e) {
       let section = document.querySelector(e.target.getAttribute('href'));
