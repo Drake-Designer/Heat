@@ -377,7 +377,8 @@ section {
   transform: scale(1.02);
 }
 
-#music-section .fa-music {
+#music-section .fa-music,
+.fa-video {
   color: var(--color-button-accent);
 }
 
