@@ -54,7 +54,7 @@ Whether you want to listen, learn more about us, or come see us live.. this is t
 
 ### Scope
 
-I have built this website as my first Milestone Project 1 for the Full Stack Web Development course at Code Institute. The idea was to create something real and personal, so I have choses to build a site for my band, Heat.
+I have built this website as my first Milestone Project 1 for the Full Stack Web Development course at Code Institute. The idea was to create something real and personal, so I have chosen to build a site for my band, Heat.
 
 The main goal of this website is to help more people discover our music, check out our upcoming gigs, and get in touch if they want to book a ticket for a gig. Whether you're a fan, a curious listener, or someone looking to book a band, this site is the place to find everything about Heat.
 
@@ -236,8 +236,11 @@ This project was built using the following tools and technologies:
 
 - [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) – For structuring the content of the pages
 - [**CSS3**](https://developer.mozilla.org/en-US/docs/Web/CSS) – For styling the layout, colours, fonts, and responsiveness
+
 - [**Bootstrap 5**](https://getbootstrap.com/) – For responsive design and reusable components like navbar, grid, and buttons
+
 - [**GitHub**](https://github.com/) – For version control and project hosting via GitHub Pages
+
 - [**Visual Studio Code**](https://code.visualstudio.com/) – The main code editor used during development
 
 Design & Media Tools:
@@ -250,6 +253,7 @@ Design & Media Tools:
 - [**HandBrake**](https://handbrake.fr/) – Used to compress and convert video files into web-friendly formats. I used HandBrake to reduce the file size of my video clips while keeping good quality. This helped improve page load time without losing the vibe of our live performances.
 
 - [**Online Audio Converter**](https://online-audio-converter.com/) – To convert audio files into `.mp3` format for the music section. I used this online tool to convert `.wav` files into high-quality `.mp3` at 320 kbps, which helped reduce file size while keeping good sound quality.
+- [**Am I Responsive?**](https://ui.dev/amiresponsive) – Used to create the mockup image showing how the site looks on different devices. I included this as the intro image in the README to give a quick visual preview of the responsive design.
 
 ### Favicon Creation & Integration
 
@@ -264,11 +268,7 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 <br>
 
-![Favicon Generator Preview 1](assets/readme-images/favicon/favicon-1.png)
-
-![Favicon Generator Preview 2](assets/readme-images/favicon/favicon-2.png)
-
-![Favicon Generator Preview 3](assets/readme-images/favicon/favicon-3.png)
+![Favicon Generator Preview 1](assets/readme-images/favicon/favicon-1.png) ![Favicon Generator Preview 2](assets/readme-images/favicon/favicon-2.png) ![Favicon Generator Preview 3](assets/readme-images/favicon/favicon-3.png)
 
 ## Testing & Bug Fixes
 
@@ -439,6 +439,10 @@ My CSS passed validation as well. However, after using Autoprefixer, the validat
 
 > These are not errors and do not affect how the website works and all styles and features display correctly on modern browsers.
 
+**Validation Result:**
+
+![HTML Validation](assets/readme-images/validation/html-validator.png) ![HTML Validation](assets/readme-images/validation/css-validator.png)
+
 ## Deployment
 
 The website was deployed early in the project, right after the home page (HTML and CSS) was set up and tested.
@@ -532,3 +536,13 @@ In particular:
 - The colour scheme ended up looking a bit similar too, but that was just a coincidence. I created my palette by picking colours from one of our own gig photos.
 
 So even if I didn’t reuse anything from their code, their website was definitely a useful visual reference while building mine.
+
+## 📝 Personal Note
+
+Since this was my very first project, I learned a lot of things step by step. I slowly figured out how to build the website, how to use Git and GitHub, and how to write a proper README. I kept improving by making small changes every day.
+
+One thing I recently discovered is that the best way to write commit messages is in the present tense (like "Fix bug" or "Add feature").  
+But if you look at my commits, most of them are written in the past tense (like "Fixed ux pic") or in present continuous (like "Working on Upcoming Gigs page"). It's too late to change them now, but that's okay! Now I know how to write them correctly next time. This is all part of the learning process.
+
+Working on this project has been really challenging (I honestly worked on it day and night), but it was also fun and rewarding. I tried my best to make the website and the code as good as possible.  
+I know there are still many things to improve, but that’s totally fine. I'm here to learn and grow, and I'm really looking forward to learning even more 🙂
