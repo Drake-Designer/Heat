@@ -128,7 +128,9 @@ These sections are all part of the same page and use anchor links to scroll smoo
 
 This page displays a list of our upcoming concerts, with details like the date, venue name, and location. At the top of the page (in the header), there’s a **"Book your spot!"** modal button that allows users to reserve tickets for future gigs.
 
-I decided to place the button only in the header and used `visibility: hidden` to hide it from the navbar, so it wouldn’t appear twice.
+> I decided to place the button only in the header and used `visibility: hidden` to hide it from the navbar, so it wouldn’t appear twice.
+
+![Upcoming Gigs Page with no Button on Navbar](assets/readme-images/rsz_upcoming-gigs-btn.png)
 
 #### Contact
 
@@ -274,7 +276,7 @@ To create a full set of favicons compatible with all major platforms (desktop, A
 
 ### 👨‍💻 Manual Testing on Real Devices
 
-I tested the website on several real devices and browsers to make sure it works properly on different screen sizes and operating systems.
+I manually tested the website on multiple real devices and browsers to ensure full functionality and responsiveness across different screen sizes and operating systems.
 
 #### 📱 Mobile & Tablet Devices:
 
@@ -287,13 +289,37 @@ I tested the website on several real devices and browsers to make sure it works 
 - **Windows PC**
 - **iMac**
 
-On each device, I checked the following:
+> ### What I tested on each device:
 
-- The layout adjusts correctly to different screen sizes (responsive design)
-- Navigation links, buttons, and forms all work as expected
-- Anchor links scroll smoothly to the right sections
-- Audio and video content loads and plays correctly
-- The contact form accepts input and can be submitted without issues
+- ✅ **Anchor links navigation**: All anchor links (e.g. “About”, “Gigs”, “Music”, “Contact”) scroll smoothly to the correct section on all devices and screen sizes.
+- ✅ **Modal functionality**: The modal button on the “Upcoming Gigs” page opens and closes correctly, and works consistently on both mobile and desktop views.
+- ✅ **Contact form validation**: Each input field (Name, Email, Message) is required. If any of them is left empty, the browser displays a validation warning. This behavior was tested on all devices.
+- ✅ **Audio & video playback**: Audio and video content loads correctly and is fully playable on all devices (e.g. iPhone, iPad, Windows PC, iMac).
+- ✅ **Responsive layout**: The layout automatically adjusts to different screen sizes and orientations, ensuring all sections are visible and easy to navigate on smaller screens.
+- ✅ **Buttons and links**: All navigation links, buttons, and interactive elements (e.g. social media icons, gig modal) are fully functional across devices.
+- ✅ **Smooth scrolling**: Scrolling behavior between sections is smooth and consistent, enhancing the user experience on both touch and non-touch devices.
+
+Below are screenshots taken during testing to confirm the site works as expected on all supported devices and screen sizes.
+
+#### 📱 iPhone 15 Pro – Anchor Link Test
+
+![Anchor Working on iPhone 15 Pro](assets/readme-images/testing/iphone15pro-gallery.png)
+
+#### 📱 iPhone 15 Pro Max – Modal Functionality
+
+![Modal on iPhone 15 Pro Max](assets/readme-images/testing/iphone15promax-modal.png)
+
+#### 📱 iPad Pro – Contact Form Validation
+
+![Form Validation on iPad Pro](assets/readme-images/testing/ipadpro-contact-form.png)
+
+#### 💻 Windows PC – Audio and Video Playback
+
+![Audio/Video on Windows PC](assets/readme-images/testing/windowspc-audio-video.png)
+
+#### 💻 iMac – Modal on Desktop
+
+![Modal on iMac](assets/readme-images/testing/imac-modal.png)
 
 ### 🧑‍🤝‍🧑 Testing with Friends and Peers
 
@@ -439,9 +465,27 @@ My CSS passed validation as well. However, after using Autoprefixer, the validat
 
 > These are not errors and do not affect how the website works and all styles and features display correctly on modern browsers.
 
+All files on the site were validated successfully and no errors are present. You can view the validation results for the deployed site at the following links:
+
+#### `index.html`
+
+[HTML VALIDATOR RESULTS - HOME PAGE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdrake-designer.github.io%2FHeat%2Findex.html)
+
+#### `upcoming-gigs.html`
+
+[HTML VALIDATOR RESULTS - UPCOMING GIGS](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdrake-designer.github.io%2FHeat%2Fupcoming-gigs.html)
+
+#### `contact.html`
+
+[HTML VALIDATOR RESULTS - CONTACT](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdrake-designer.github.io%2FHeat%2Fcontact.html)
+
+#### `style.css`
+
+[CSS VALIDATOR RESULTS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdrake-designer.github.io%2FHeat%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=it)
+
 **Validation Result:**
 
-![HTML Validation](assets/readme-images/validation/html-validator.png) ![HTML Validation](assets/readme-images/validation/css-validator.png)
+![HTML Validation](assets/readme-images/validation/hmtl-validator.png) ![CSS Validation](assets/readme-images/validation/css-validator.png)
 
 ## Deployment
 
